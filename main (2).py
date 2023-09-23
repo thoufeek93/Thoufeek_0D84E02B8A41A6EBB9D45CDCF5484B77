@@ -1,7 +1,12 @@
-#Online Python computer interpreters to Fun Python online.
-#write Python 3 code in this online editor and run it.
-year = 2020
-if(year%4 ==0):
-   print("leap year")
-else:
-    print("Not leap year")
+#
+def linear_search_product(product_list, target_product):
+    indices = []
+    for i, product in enumerate(product_list):
+        if product == target_product:
+            indices.append(i)
+    return indices
+
+products = ["Apple", "Banana", "Apple", "Orange", "Pear", "Apple"]
+target = "Apple"
+result = linear_search_product(products, target)
+print(result)
